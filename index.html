@@ -13,10 +13,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      document.documentElement.className += " js";
+    </script>
     <title>Animais Fantasticos</title>
   </head>
   <body>
-    <nav class="menu">
+    <nav class="menu js-menu">
       <ul>
         <li><a href="#animais">Animais</a></li>
         <li><a href="#faq">Faq</a></li>
@@ -25,9 +28,9 @@
       </ul>
     </nav>
 
-    <section class="grid-section animais" id="animais">
+    <section class="grid-section animais js-scroll" id="animais">
       <h1 class="titulo">Animais Fantasticos</h1>
-      <ul class="animais-lista">
+      <ul class="animais-lista js-tabmenu">
         <li><img src="img/imagem1.jpg" alt="" /></li>
         <li><img src="img/imagem2.jpg" alt="" /></li>
         <li><img src="img/imagem3.jpg" alt="" /></li>
@@ -35,7 +38,7 @@
         <li><img src="img/imagem5.jpg" alt="" /></li>
         <li><img src="img/imagem6.jpg" alt="" /></li>
       </ul>
-      <div class="animais-descricao">
+      <div class="animais-descricao js-tabcontent">
         <section>
           <h2>Raposa</h2>
           <p>
@@ -170,9 +173,9 @@
       </div>
     </section>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq js-scroll" id="faq">
       <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista">
+      <dl class="faq-lista js-accordion">
         <dt>Qual a idade dos animais?</dt>
         <dd>
           As raposas são animais mamíferos e onívoros pertencentes à família
@@ -198,7 +201,7 @@
       </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section class="grid-section contato js-scroll" id="contato">
       <h1 class="titulo">Contato</h1>
       <div class="mapa"><img src="img/mapa.png" alt="" /></div>
       <ul class="dados">
@@ -212,6 +215,6 @@
     <footer class="copy">
       <p>Todos os direitos reservados.</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
